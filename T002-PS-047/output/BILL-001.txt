@@ -1,0 +1,47 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-001                       Date/Time: 2026-11-15 18:30:00
+ Member ID  : MEM001
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Premium Basmati Rice 5kg  3 PC         140.00    420.00    69.00    351.00
+2   Organic Tomatoes          1.500 KG      35.00     52.50    12.00     40.50
+3   Dairy Fresh Milk 1L       1 PC          58.00     58.00     8.50     49.50
+4   Cheddar Cheese 200g       1 PC         175.00    175.00    26.50    148.50
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     705.50
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Member Savings (Premium Basmati Rice 5kg)          : -Rs   30.00
+   * Member Savings (Organic Tomatoes)                  : -Rs    7.50
+   * Member Savings (Dairy Fresh Milk 1L)               : -Rs    3.00
+   * Member Savings (Cheddar Cheese 200g)               : -Rs   10.00
+   * Coupon (SAVE10)                                    : -Rs   65.50
+ Total Savings & Discounts                          : -Rs    116.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     589.50
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%                40.50         0.00         0.00           0.00
+   5%               400.50        10.02        10.01          20.03
+   12%              148.50         8.91         8.91          17.82
+ Total GST Collected                               : Rs      37.85
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     627.35
+==============================================================================
+ LOYALTY SUMMARY:
+   Points Earned   : 6 pts (Status: PENDING - Available after 7 days)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to 23:59:59 on Day +7 against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

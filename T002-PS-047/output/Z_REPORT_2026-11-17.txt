@@ -1,0 +1,30 @@
+==============================================================================
+                 SUPERMARKET POS - TILL Z-REPORT
+          Capstone Project PS-047 | Team IDT002
+==============================================================================
+ Report Date    : 2026-11-17
+ Generated At   : 2026-11-15 23:40:47
+------------------------------------------------------------------------------
+ Total Bills Finalized                             :              0
+ Total Return Notes Processed                      :              1
+------------------------------------------------------------------------------
+ Gross Sales Subtotal                              : Rs        0.00
+ Total Discounts Granted                           : -Rs       0.00
+ Net Taxable Sales                                 : Rs        0.00
+..............................................................................
+ GST CONSOLIDATED RECONCILIATION:
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+ Total GST Collected                               : Rs        0.00
+ Post-GST Sales Value                              : Rs        0.00
+ Total Customer Refunds (Returns)                  : -Rs     122.85
+==============================================================================
+ NET TILL REVENUE (Cash Drawer Total)              : Rs     -122.85
+==============================================================================
+ LOYALTY RECONCILIATION:
+   Total Loyalty Points Earned (Pending)           :              0 pts
+   Total Loyalty Points Burned                     :              0 pts
+   Total Loyalty Value Redeemed                    : Rs        0.00
+==============================================================================
+              *** END OF Z-REPORT TRANSMISSION ***
+==============================================================================

@@ -1,0 +1,47 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-002                       Date/Time: 2026-11-15 20:15:00
+ Member ID  : MEM001
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Fresh Exotic Kiwi Pack    1 PC         120.00    120.00    20.29     99.71
+2   Artisan Dark Chocolate    1 PC         100.00    100.00     7.67     92.33
+3   Milk Chocolate Bar        1 PC          80.00     80.00     6.13     73.87
+4   White Chocolate Bar       1 PC          60.00     60.00    60.00      0.00
+5   Almond Chocolate Bar      1 PC          40.00     40.00     4.91     35.09
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     400.00
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Buy 2 Get 1 Free (B2G1_CHOC - Free: White Chocolate Bar) : -Rs   60.00
+   * Fresh Clearance 10% (Fresh Exotic Kiwi Pack)       : -Rs   12.00
+   * Member Savings (Almond Chocolate Bar)              : -Rs    2.00
+   * Loyalty Points Burned (100 pts)                    : -Rs   25.00
+ Total Savings & Discounts                          : -Rs     99.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     301.00
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   5%                99.71         2.50         2.49           4.99
+   18%              201.29        18.12        18.11          36.23
+ Total GST Collected                               : Rs      41.22
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     342.22
+==============================================================================
+ LOYALTY SUMMARY:
+   Points Redeemed : 100 pts (Saved Rs 25.00)
+   Points Earned   : 3 pts (Status: PENDING - Available after 7 days)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to 23:59:59 on Day +7 against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================
