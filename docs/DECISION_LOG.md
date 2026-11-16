@@ -1,40 +1,58 @@
-# POS Engine Architecture & Technical Decision Log
+# Architecture & Engineering Decision Log
 
 **Capstone Project PS-047: Supermarket POS Billing Engine**  
-**Team IDT002: Aditi Anshu & Aditi Chaudhary**
+**Team IDT002: Aditi Anshu (1AT24CD004) & Aditi Chaudhary (1AT24CD005)**  
+**Section: CSDS A | Standard Library Only (Python 3.10+) | Command-File Driven (No UI)**
 
 ---
 
-## 1. Architectural & Engineering Decisions
+## 1. One-Line Decision Register
 
-### DEC-001: Strict Decimal Arithmetic (Zero-Float Guarantee)
-- **Context:** Binary floating-point arithmetic introduces IEEE-754 representation artifacts (e.g., `0.1 + 0.2 = 0.30000000000000004`), which lead to fatal currency drift and audit failure in fiscal POS engines.
-- **Decision:** Mandate `decimal.Decimal` with `ROUND_HALF_UP` for all currency (2 decimal places) and weights (3 decimal places). Floats are strictly barred across models, engines, and tests.
-- **Consequences:** Deterministic, legally compliant calculations where `subtotal - discounts == taxable_value` and `taxable + gst == grand_total` to the exact paisa.
-
-### DEC-002: Standard Library Only (Zero External Dependencies)
-- **Context:** Retail embedded edge nodes and till controllers require minimal runtime overhead and airtight security sandboxing.
-- **Decision:** Rely solely on Python 3.10+ standard libraries (`decimal`, `csv`, `json`, `datetime`, `dataclasses`, `typing`, `argparse`, `unittest`).
-- **Consequences:** Eliminates external attack surfaces, supply-chain vulnerabilities, and pip deployment overhead.
-
-### DEC-003: Pure Data Domain Models with Dataclasses
-- **Context:** High throughput scanning requires lightweight, serializable objects for catalog products, scan events, and bill line states.
-- **Decision:** Implemented `@dataclass` domain objects in `src/models.py`. Encapsulated business constraints such as MRP ceiling directly into product properties.
-- **Consequences:** Clean separation of concerns between state storage (`models.py`), lexing/parsing (`parser.py`), business rules orchestration (`engine.py`), and presentation (`formatter.py`).
-
-### DEC-004: Pro-Rata Apportionment with Largest-Item Residual Adjustment
-- **Context:** Dividing bill-level discounts (coupons, threshold, loyalty points) across line items often produces fractional paise that do not sum to the exact nominal discount.
-- **Decision:** Implemented a two-pass apportionment algorithm. The first pass computes proportional shares quantized to `Decimal('0.01')`. The residual discrepancy $\Delta = D_{\text{nominal}} - \sum S_i$ is attributed to the item having the largest base value.
-- **Consequences:** The sum of apportioned discounts always equals the nominal discount to the exact paisa, preventing penny-drift across itemized lines.
-
-### DEC-005: Per-Slab GST Grouping and Line-Level Proportional Allocation
-- **Context:** Indian GST statutory rules require tax computation and rounding per rate slab (`0%`, `5%`, `12%`, `18%`), rather than individual line items. However, partial returns require knowing the exact post-tax effective price paid for each individual line item.
-- **Decision:** The engine groups lines by GST rate slab, rounds per slab to 2 decimal places, and then proportionally assigns slab GST to individual lines within that slab (adjusting residual paise on the largest taxable line).
-- **Consequences:** Full statutory compliance with rate-slab rounding while enabling exact line-item refund calculations during returns.
+| Decision ID | Date | Component | One-Line Decision Summary | Impact / Result |
+| :---: | :---: | :--- | :--- | :--- |
+| **DEC-001** | 2026-11-15 | Core Arithmetic | Mandate `decimal.Decimal` with `ROUND_HALF_UP` for all currency (2dp) and weights (3dp); ban `float` entirely. | Eliminates IEEE-754 rounding drift; ensures zero-loss exact-paisa accounting. |
+| **DEC-002** | 2026-11-15 | Dependencies | Implement using Python 3.10+ Standard Library only with zero external pip packages. | Guarantees self-contained, air-gapped terminal execution on any host environment. |
+| **DEC-003** | 2026-11-15 | User Interface | Bar all graphical or web interfaces; enforce strict batch command-file and CLI execution only. | Complies strictly with the capstone problem brief requirements for a till backend engine. |
+| **DEC-004** | 2026-11-15 | Domain Modeling | Model catalog items, bills, scan events, and reports as `@dataclass` structures in `src/models.py`. | Provides clean, typed, inspectable domain entities with minimal runtime overhead. |
+| **DEC-005** | 2026-11-15 | Scale Validation | Reject weighed items with net weight strictly below 0.005 kg (`BR-01`) at scan ingestion time. | Prevents illegal or inaccurate zero-load scale scans from entering the billing queue. |
+| **DEC-006** | 2026-11-15 | Legal Pricing | Enforce MRP ceiling via `Product.effective_selling_price` and `effective_member_price` as `min(price, mrp)`. | Eliminates overcharging liabilities under consumer packaging laws across all price tiers. |
+| **DEC-007** | 2026-11-15 | Multi-Buy Partitioning | Sort multi-buy units descending by price before grouping triples, awarding the cheapest unit in each triple free. | Maximizes customer fairness and produces deterministic promotional allocations. |
+| **DEC-008** | 2026-11-15 | Multi-Buy Capping | Cap multi-buy free items at a maximum of 3 free items per bill per offer group (`BR-03`). | Prevents merchant inventory drainage on bulk promotional purchases. |
+| **DEC-009** | 2026-11-15 | Category Clearance | Activate 10% FRESH discount only if scan or bill timestamp is at or after 20:00:00 (`BR-04`). | Perfectly models supermarket evening perishables clearance schedules. |
+| **DEC-010** | 2026-11-15 | Offer Precedence | Enforce rigid 5-level precedence: Multi-Buy $\to$ Category $\to$ Member $\to$ Coupon $\to$ Threshold (`BR-05`). | Prevents duplicate stacking of multiple item-level promotions on the same physical unit. |
+| **DEC-011** | 2026-11-15 | Coupon Validation | Restrict to max 1 coupon per bill; cap PCT coupons at Rs 200.00; reject FIXED coupons if subtotal $< 3 \times \text{value}$. | Protects store margins from abusive coupon stacking or low-subtotal redemption. |
+| **DEC-012** | 2026-11-15 | Pro-Rata Apportionment | Apportion bill-level discounts pro-rata across items, allocating residual rounding paise to the largest line item. | Guarantees that the sum of line-item discounts equals the nominal bill discount to the exact paisa. |
+| **DEC-013** | 2026-11-15 | GST Rate Slabs | Group items by GST slab (`0%`, `5%`, `12%`, `18%`) and round tax per slab rather than per line (`BR-09`). | Complies strictly with statutory Indian GST accounting standards. |
+| **DEC-014** | 2026-11-15 | Intra-Slab Tax Allocation | Proportionally distribute rounded slab GST back to individual lines within the slab. | Enables deterministic line-level effective prices needed for partial returns. |
+| **DEC-015** | 2026-11-15 | Loyalty Accrual Exclusions | Exclude `TOBACCO` and `LIQUOR` categories entirely from loyalty point earn calculations (`BR-10`). | Enforces legal compliance barring promotional rewards on regulated vices. |
+| **DEC-016** | 2026-11-15 | Loyalty Point Maturation | Place earned loyalty points into a 7-day `PENDING` state until the customer return window lapses (`BR-10`). | Eliminates point gaming where customers earn points and immediately return merchandise. |
+| **DEC-017** | 2026-11-15 | Loyalty Redemption Rules | Enforce 1 pt = Rs 0.25, redeemable in 100-pt multiples, capped at 20% of post-threshold subtotal before GST (`BR-11`). | Standardizes loyalty burns while preventing point redemptions from wiping out tax liabilities. |
+| **DEC-018** | 2026-11-15 | Return Eligibility Window | Define the 7-day return window as inclusive up to 23:59:59 on Day +7 from the original bill date (`BR-12`). | Provides clear store closing cutoff rules for customer returns. |
+| **DEC-019** | 2026-11-15 | Weighed Item Returns | Strictly bar returns on weighed bulk items (`unit == 'KG'`) (`BR-12`). | Prevents health hazards, food contamination, and perishables fraud. |
+| **DEC-020** | 2026-11-15 | Multi-Buy Return Clawback | Deduct the free promotional item's value when a partial return breaks a multi-buy triple (`BR-13`). | Prevents exploitation where customers buy 3 items to get 1 free and return the 2 paid items. |
+| **DEC-021** | 2026-11-15 | Free Item Return Refund | Refund strictly Rs 0.00 when a customer returns the free item in a multi-buy deal (EC-7). | Accurately reflects the customer's actual zero outlay on the promotional free unit. |
+| **DEC-022** | 2026-11-15 | Till Z-Report Invariance | Formulate Z-report to reconcile gross sales, discounts, slab taxes, refunds, and net cash drawer revenue. | Provides store managers with mathematically provable till balancing and audit verification. |
 
 ---
 
-## 2. Explicit Edge-Case Handling & Resolution Log
+## 2. Technical Rationale & Deep Dive
+
+### 2.1 The Float-Free Financial Guarantee
+Binary floating-point arithmetic (IEEE-754) is non-deterministic across hardware platforms and represents decimal fractions as recurring binary expansions. In retail transactions, rounding `0.1 + 0.2` produces `0.30000000000000004`, leading to fractional cent imbalances that violate fiscal statutes. By adopting Python's `decimal.Decimal` with explicit quantization (`Decimal('0.01')` for currency and `Decimal('0.001')` for weight) and `ROUND_HALF_UP`, our engine guarantees that every transaction is audit-proof and repeatable to the exact paisa.
+
+### 2.2 Pro-Rata Apportionment Algorithm
+When a coupon discount (e.g., Rs 50.00) or bill threshold (e.g., Rs 100.00) is distributed across multiple line items, naive integer division or per-line rounding inevitably produces rounding residuals ($\pm 1$ or $2$ paise). Rather than dropping the residual or forcing unbalanced line values, our engine uses a two-pass algorithm:
+1. Pass 1 calculates the baseline proportional share for each line:
+   $$S_i = \text{quantize\_currency}\left( \frac{V_i}{V_{\text{total}}} \times D_{\text{total}} \right)$$
+2. Pass 2 computes the residual drift $\Delta = D_{\text{total}} - \sum S_i$ and assigns it to the line with the maximum taxable base value.
+This ensures strict adherence to the invariant $\sum S_i \equiv D_{\text{total}}$.
+
+### 2.3 Statutory GST Rate-Slab Rounding
+Indian GST regulations mandate that GST must not be rounded at the individual SKU line level; rather, lines sharing the same statutory tax rate (`0%`, `5%`, `12%`, `18%`) must be aggregated into a slab taxable total, upon which the percentage is applied and rounded to two decimal places. However, to support partial item returns, the engine also computes an exact line-level GST allocation so that returning one line refunds the exact post-tax amount paid by the customer.
+
+---
+
+## 3. Explicit Edge-Case Resolution Log
 
 ### Edge Case 1: Net Weight Minimum Threshold Boundary (0.005 kg vs 0.004 kg)
 - **Problem Statement:** Verify that weighed items respect the tare deduction and reject transactions below the minimum legal scale sensitivity of 5 grams.
@@ -59,7 +77,7 @@
   - The 4th item (Rs 40.00) cannot form a complete group of 3. It remains outside the group, is paid at full price, and remains eligible for subsequent offers.
 - **Test Reference:** `TestPOSBillingEngine.test_edge_case_3_four_items_different_prices_multibuy`.
 
-### Edge Case 4: Evening Clearance Scan at Exactly 20:00
+### Edge Case 4: Evening Clearance Scan at Exactly 20:00:00
 - **Problem Statement:** Verify whether a `FRESH` item scanned at exactly `20:00:00` qualifies for the 10% clearance discount.
 - **Resolution:**
   - BR-04 specifies `time >= 20:00:00`.
