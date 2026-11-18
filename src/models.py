@@ -8,23 +8,23 @@ Floats are strictly prohibited.
 """
 
 from dataclasses import dataclass, field
-from datetime import datetime, date
-from decimal import Decimal, ROUND_HALF_UP, ROUND_DOWN
-from typing import Optional, List, Dict, Any
+from datetime import datetime, date, time
+from decimal import Decimal, ROUND_HALF_UP
+from typing import Optional, List, Dict, Any, Union
 
 
 CURRENCY_QUANT = Decimal('0.01')
 WEIGHT_QUANT = Decimal('0.001')
 
 
-def quantize_currency(value: Decimal) -> Decimal:
+def quantize_currency(value: Union[Decimal, float, int, str]) -> Decimal:
     """Round currency amount to 2 decimal places using ROUND_HALF_UP."""
     if not isinstance(value, Decimal):
         value = Decimal(str(value))
     return value.quantize(CURRENCY_QUANT, rounding=ROUND_HALF_UP)
 
 
-def quantize_weight(value: Decimal) -> Decimal:
+def quantize_weight(value: Union[Decimal, float, int, str]) -> Decimal:
     """Round weight to 3 decimal places using ROUND_HALF_UP."""
     if not isinstance(value, Decimal):
         value = Decimal(str(value))
@@ -35,6 +35,7 @@ def quantize_weight(value: Decimal) -> Decimal:
 class Product:
     """
     Product Master Record.
+    Supports both 300-SKU evaluation schema and standard schema.
     """
     barcode: str
     name: str
@@ -42,29 +43,39 @@ class Product:
     selling_price: Decimal
     member_price: Decimal
     gst_rate: Decimal
-    unit: str  # 'PC' or 'KG'
-    category: str  # 'FRESH', 'GROCERY', 'DAIRY', 'TOBACCO', 'LIQUOR', etc.
+    unit: str  # 'PIECE', 'PC', or 'KG'
+    category: str  # 'FRESH', 'STAPLES', 'GROCERY', 'DAIRY', 'SNACKS', 'TOBACCO', 'LIQUOR', etc.
     tare_weight: Decimal = Decimal('0.000')
     offer_group: str = ""
+    sku: str = ""
 
     def __post_init__(self):
         if not isinstance(self.mrp, Decimal):
-            self.mrp = Decimal(str(self.mrp))
+            self.mrp = Decimal(str(self.mrp or '0.00'))
         if not isinstance(self.selling_price, Decimal):
-            self.selling_price = Decimal(str(self.selling_price))
+            self.selling_price = Decimal(str(self.selling_price or self.mrp))
         if not isinstance(self.member_price, Decimal):
-            self.member_price = Decimal(str(self.member_price))
+            self.member_price = Decimal(str(self.member_price or '0.00'))
         if not isinstance(self.gst_rate, Decimal):
-            self.gst_rate = Decimal(str(self.gst_rate))
+            self.gst_rate = Decimal(str(self.gst_rate or '0'))
         if not isinstance(self.tare_weight, Decimal):
-            self.tare_weight = Decimal(str(self.tare_weight))
+            self.tare_weight = Decimal(str(self.tare_weight or '0.000'))
 
         self.mrp = quantize_currency(self.mrp)
         self.selling_price = quantize_currency(self.selling_price)
         self.member_price = quantize_currency(self.member_price)
         self.tare_weight = quantize_weight(self.tare_weight)
-        self.unit = self.unit.strip().upper()
+        
+        # Normalize unit: 'PC' or 'PIECE' -> 'PIECE'
+        u = self.unit.strip().upper()
+        self.unit = 'PIECE' if u in ('PC', 'PIECE') else u
         self.category = self.category.strip().upper()
+        self.offer_group = self.offer_group.strip()
+        self.sku = self.sku.strip()
+
+    @property
+    def is_weighed(self) -> bool:
+        return self.unit == 'KG'
 
     @property
     def effective_selling_price(self) -> Decimal:
@@ -82,21 +93,25 @@ class Product:
 @dataclass
 class ScanEvent:
     """
-    Represents an parsed scan action or command event.
+    Represents a parsed scan action or command event.
+    Supports both pipe-separated and space-separated syntax.
     """
-    event_type: str  # START_BILL, SCAN, WEIGH, OVERRIDE_QTY, VOID, APPLY_COUPON, REDEEM_POINTS, CHECKOUT, RETURN, Z_REPORT
+    event_type: str  # OPEN_BILL / START_BILL, SCAN, SCAN_WEIGHED / WEIGH, QTY_OVERRIDE / OVERRIDE_QTY, VOID, APPLY_COUPON, REDEEM_POINTS, CLOSE_BILL / CHECKOUT, RETURN, Z_REPORT
     barcode: Optional[str] = None
     qty: Optional[Decimal] = None
     gross_weight: Optional[Decimal] = None
     timestamp: Optional[datetime] = None
     line_no_or_barcode: Optional[str] = None
+    line_no: Optional[int] = None
     new_qty: Optional[Decimal] = None
     coupon_code: Optional[str] = None
-    coupon_type: Optional[str] = None  # PCT, FIXED
+    coupon_type: Optional[str] = None  # PCT / PERCENT, FIXED
     coupon_value: Optional[Decimal] = None
     points: Optional[int] = None
     bill_id: Optional[str] = None
+    till_id: Optional[str] = None
     member_id: Optional[str] = None
+    payment_mode: Optional[str] = None  # CASH, UPI, CARD
     return_id: Optional[str] = None
     original_bill_id: Optional[str] = None
     return_items: Optional[Dict[str, Decimal]] = None
@@ -150,12 +165,12 @@ class BillLine:
         if not isinstance(self.net_weight, Decimal):
             self.net_weight = Decimal(str(self.net_weight))
 
-        if self.product.unit == 'KG':
+        if self.product.is_weighed:
             self.net_weight = quantize_weight(self.net_weight)
             self.gross_weight = quantize_weight(self.gross_weight)
             self.tare_weight = quantize_weight(self.tare_weight)
         else:
-            self.qty = quantize_currency(self.qty)  # or exact integer count
+            self.qty = quantize_currency(self.qty)
 
     @property
     def total_discount(self) -> Decimal:
@@ -191,10 +206,14 @@ class BillLine:
 class OfferLine:
     """
     Representation of an offer / discount applied to a bill.
+    Maps to offer_lines.csv: bill_id, offer_type, offer_ref, line_no, discount_amount
     """
-    offer_type: str  # 'MULTIBUY', 'CATEGORY', 'MEMBER', 'COUPON', 'THRESHOLD', 'LOYALTY_BURN'
-    description: str
-    discount_amount: Decimal
+    bill_id: str = ""
+    offer_type: str = ""  # 'MULTIBUY', 'CATEGORY', 'MEMBER', 'COUPON', 'THRESHOLD', 'POINTS'
+    offer_ref: str = ""   # e.g. 'MB-01', 'FRESH', 'MEMBER', 'SAVE10', 'THRESHOLD', 'POINTS'
+    line_no: Optional[int] = None
+    discount_amount: Decimal = Decimal('0.00')
+    description: str = ""
 
 
 @dataclass
@@ -203,8 +222,11 @@ class Coupon:
     Coupon details applied to a bill.
     """
     code: str
-    coupon_type: str  # 'PCT' or 'FIXED'
+    coupon_type: str  # 'PERCENT' / 'PCT' or 'FIXED'
     value: Decimal
+    max_discount: Optional[Decimal] = None
+    valid_from: Optional[date] = None
+    valid_to: Optional[date] = None
 
 
 @dataclass
@@ -213,8 +235,11 @@ class Bill:
     Full customer billing transaction.
     """
     bill_id: str
-    timestamp: datetime
+    timestamp: datetime  # open_ts
+    close_ts: Optional[datetime] = None
+    till_id: str = "TILL-01"
     member_id: Optional[str] = None
+    payment_mode: str = "CASH"
     lines: List[BillLine] = field(default_factory=list)
     offer_lines: List[OfferLine] = field(default_factory=list)
     coupon: Optional[Coupon] = None
@@ -224,6 +249,10 @@ class Bill:
     loyalty_points_earned: int = 0  # Earned pending points
 
     gross_total: Decimal = Decimal('0.00')
+    item_offer_total: Decimal = Decimal('0.00')
+    subtotal: Decimal = Decimal('0.00')
+    coupon_discount: Decimal = Decimal('0.00')
+    threshold_discount: Decimal = Decimal('0.00')
     total_discount: Decimal = Decimal('0.00')
     subtotal_taxable: Decimal = Decimal('0.00')
     gst_by_slab: Dict[Decimal, Dict[str, Decimal]] = field(default_factory=dict)
@@ -231,9 +260,7 @@ class Bill:
     grand_total: Decimal = Decimal('0.00')
     is_finalized: bool = False
 
-    # Multi-buy group metadata for BR-13 return reversal tracking
-    # List of dicts: {'offer_group': str, 'free_barcode': str, 'free_unit_price': Decimal,
-    #                 'paid_barcodes': List[str], 'free_returned': bool, 'reversal_applied': bool}
+    # Multi-buy group metadata for return clawback reversal (BR-13)
     multibuy_groups: List[Dict[str, Any]] = field(default_factory=list)
 
 
@@ -243,6 +270,7 @@ class ReturnLine:
     Line item inside a return note.
     """
     barcode: str
+    sku: str
     product_name: str
     qty: Decimal
     original_unit_price: Decimal
@@ -255,13 +283,20 @@ class ReturnLine:
 class ReturnNote:
     """
     Record of processed product return and customer refund.
+    Maps to return_notes.csv: return_id, original_bill_id, sku, qty, status, refund_amount, multibuy_clawback, reason
     """
     return_id: str
     original_bill_id: str
     timestamp: datetime
+    till_id: str = "TILL-01"
+    sku: str = ""
+    qty: Decimal = Decimal('0')
+    status: str = "ACCEPTED"  # ACCEPTED or REJECTED
+    refund_amount: Decimal = Decimal('0.00')
+    multibuy_clawback: Decimal = Decimal('0.00')
+    reason: str = ""
     lines: List[ReturnLine] = field(default_factory=list)
     total_refund: Decimal = Decimal('0.00')
-    reason_or_notes: str = ""
 
 
 @dataclass
@@ -271,6 +306,7 @@ class LoyaltyAccount:
     """
     member_id: str
     name: str = ""
+    mobile: str = ""
     points_balance: int = 0
     pending_points: List[Dict[str, Any]] = field(default_factory=list)
 
@@ -279,18 +315,28 @@ class LoyaltyAccount:
 class TillZReport:
     """
     End-of-day till reconciliation report.
+    Maps to z_report.csv: till_id, business_date, bills_count, gross_sales, total_discounts, gst_total, net_sales, returns_count, refunds_total, cash, upi, card
     """
-    report_date: date
-    generated_at: datetime
-    total_bills: int = 0
-    total_returns: int = 0
+    till_id: str
+    business_date: date
+    timestamp: datetime
+    bills_count: int = 0
     gross_sales: Decimal = Decimal('0.00')
     total_discounts: Decimal = Decimal('0.00')
+    gst_total: Decimal = Decimal('0.00')
+    net_sales: Decimal = Decimal('0.00')
+    returns_count: int = 0
+    refunds_total: Decimal = Decimal('0.00')
+    cash: Decimal = Decimal('0.00')
+    upi: Decimal = Decimal('0.00')
+    card: Decimal = Decimal('0.00')
+    
+    # Internal breakdown
+    total_bills: int = 0
+    total_returns: int = 0
     net_taxable_sales: Decimal = Decimal('0.00')
     gst_by_slab: Dict[Decimal, Dict[str, Decimal]] = field(default_factory=dict)
-    total_gst: Decimal = Decimal('0.00')
     post_gst_sales: Decimal = Decimal('0.00')
-    total_refunds: Decimal = Decimal('0.00')
     net_revenue: Decimal = Decimal('0.00')
     points_earned: int = 0
     points_redeemed: int = 0
