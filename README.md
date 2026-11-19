@@ -1,15 +1,16 @@
 # Supermarket POS Billing Engine — PS-047
 
-**Team IDT002 | Authors: Aditi Anshu (1AT24CD004) and Aditi Chaudhary (1AT24CD005)**  
+**Team IDT002 | Authors: Aditi Anshu (1AT24CD004) and Aditi Chaudhary (1AT24CD005)**
+
 **Python 3.10+ | Standard library only | Command-file driven terminal backend**
 
-## 1. Project overview
+## 1. Project Overview
 
 This project processes supermarket point-of-sale commands in chronological file order. It supports piece and weighed products, MRP price caps, multi-buy offers, evening clearance, member pricing, coupons, bill thresholds, GST slabs, loyalty points, returns, and till Z-reports. It has no GUI or web interface.
 
 All currency calculations use `decimal.Decimal` with `ROUND_HALF_UP`; weights are quantized to three decimal places.
 
-## 2. Project structure
+## 2. Project Structure
 
 ```text
 PS047_Supermarket_POS_Project/
@@ -40,9 +41,10 @@ PS047_Supermarket_POS_Project/
 └── output/                    # Generated invoices, vouchers, reports, and evaluation CSVs
 ```
 
-## 3. Supplied data pack
+## 3. Supplied Data Pack
 
 The `data/` directory contains the provided data without changing its values:
+
 - 300 products (including 80 weighed products)
 - 4 multi-buy offer groups
 - 15 store parameters
@@ -52,7 +54,7 @@ The `data/` directory contains the provided data without changing its values:
 
 The full source data dictionary and planted edge cases are in `data/DATA_PACK_README.md`.
 
-## 4. How to run the complete project
+## 4. How to Run the Complete Project
 
 Open a terminal in the project root folder. Confirm Python 3.10 or newer:
 
@@ -72,7 +74,7 @@ The CLI automatically loads `coupons.csv`, `members.csv`, `store_parameters.csv`
 python main.py --products data/products.csv --commands data/commands.txt --output output --coupons data/coupons.csv --members data/members.csv --parameters data/store_parameters.csv
 ```
 
-### Expected execution summary
+### Expected Execution Summary
 
 ```text
 Successfully loaded 300 products.
@@ -88,7 +90,7 @@ Total Z-Reports Emitted : 6
 
 One deliberately invalid weighed scan in the data pack has net weight below the minimum and is rejected at event level; it does not create a bill line. Rejected return commands are retained in `return_notes.csv` with status `REJECTED`.
 
-## 5. Generated output
+## 5. Generated Output
 
 The run creates individual `.txt` invoices, return vouchers, and till reports, plus the five evaluation CSVs:
 
@@ -102,7 +104,7 @@ The run creates individual `.txt` invoices, return vouchers, and till reports, p
 
 The current supplied-data run produces 355 bill-line rows, 50 bill rows, 65 offer rows, 10 return rows, and 6 Z-report rows (excluding headers).
 
-## 6. Run automated tests
+## 6. Run Automated Tests
 
 From the project root:
 
@@ -112,7 +114,7 @@ python -m unittest discover -s tests -v
 
 The unit suite checks BR-01 to BR-13 and the eight stated edge cases. The integration test processes the complete supplied command stream and checks the transaction counts and planted return/clawback outcomes.
 
-## 7. Command format
+## 7. Command Format
 
 Commands are pipe-delimited and processed in file order. The supported commands are:
 
@@ -129,9 +131,10 @@ Commands are pipe-delimited and processed in file order. The supported commands 
 
 See the data-pack README for argument details, units, expected CSV columns, and planted cases.
 
-## 8. Business rules
+## 8. Business Rules
 
 The engine follows the supplied team specification for:
+
 1. Tare subtraction and minimum net weight
 2. MRP ceiling
 3. Multi-buy offers (cheapest eligible unit free)
@@ -148,10 +151,10 @@ The engine follows the supplied team specification for:
 
 Detailed technical decisions and diagrams are in `docs/DESIGN.md` and `docs/DECISION_LOG.md`.
 
-## 9. Contribution and GitHub attribution
+## 9. Contribution and GitHub Attribution
 
 `previous_work/` preserves the original supplied implementation and sample reports. The top-level `src/`, `main.py`, tests, and generated `output/` form the runnable integrated project. See `docs/WORK_SPLIT.md` before making individual author claims or splitting commits. Do not attribute existing team files to one person unless your Git history or team records establish who wrote them.
 
-## 10. Validation report
+## 10. Validation Report
 
 See `docs/VALIDATION_RESULTS.md` for the test result, full-stream counts, output row counts, and planted outcomes checked.
