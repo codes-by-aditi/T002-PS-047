@@ -37,7 +37,6 @@ PS047_Supermarket_POS_Project/
 │   ├── DESIGN.md
 │   ├── DECISION_LOG.md
 │   └── WORK_SPLIT.md
-├── previous_work/             # Unmodified copy of the supplied starter/team baseline
 └── output/                    # Generated invoices, vouchers, reports, and evaluation CSVs
 ```
 
@@ -153,7 +152,7 @@ Detailed technical decisions and diagrams are in `docs/DESIGN.md` and `docs/DECI
 
 ## 9. Contribution and GitHub Attribution
 
-`previous_work/` preserves the original supplied implementation and sample reports. The top-level `src/`, `main.py`, tests, and generated `output/` form the runnable integrated project. See `docs/WORK_SPLIT.md` before making individual author claims or splitting commits. Do not attribute existing team files to one person unless your Git history or team records establish who wrote them.
+The top-level `src/`, `main.py`, tests, and generated `output/` form the runnable integrated project. See `docs/WORK_SPLIT.md` before making individual author claims or splitting commits. Do not attribute existing team files to one person unless your Git history or team records establish who wrote them.
 
 ## 10. Validation Report
 
