@@ -1,0 +1,43 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0039                 Till ID  : TILL-02
+ Date/Time  : 2026-10-18 13:33:57       Payment  : CASH
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Bathing Soap 100 g        10 PC         60.00    600.00   180.00    420.00
+2   Wafers 75 g               1 PC          25.00     25.00     0.00     25.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     625.00
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Bathing soap buy 2 get 1 (MB-01 - Free: Bathing Soap 100 g) : -Rs   60.00
+   * Bathing soap buy 2 get 1 (MB-01 - Free: Bathing Soap 100 g) : -Rs   60.00
+   * Bathing soap buy 2 get 1 (MB-01 - Free: Bathing Soap 100 g) : -Rs   60.00
+ Total Savings & Discounts                          : -Rs    180.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     445.00
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   12%               25.00         1.50         1.50           3.00
+   18%              420.00        37.80        37.80          75.60
+ Total GST Collected                               : Rs      78.60
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     523.60
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

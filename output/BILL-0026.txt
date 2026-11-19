@@ -1,0 +1,57 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0026                 Till ID  : TILL-03
+ Date/Time  : 2026-10-18 08:05:57       Payment  : CARD
+ Member ID  : MEM-0033
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Lemon Soda combo pack     1 PC          85.00     85.00    16.65     68.35
+2   Dragon Fruit (per kg)     2.028 KG     120.00    243.36    30.10    213.26
+3   Papaya (per kg)           0.662 KG      80.00     52.96     6.55     46.41
+4   Bathing Soap 4x100 g      1 PC         170.00    170.00    21.03    148.97
+5   Groundnut loose (per kg)  0.854 KG    1020.00    871.08   107.75    763.33
+6   Body Lotion mini          2 PC         120.00    240.00    29.68    210.32
+7   Cola 750 ml               1 PC          75.00     75.00    14.53     60.47
+8   Glucose Biscuits 200 g    2 PC          90.00    180.00    22.26    157.74
+9   Energy Drink 250 ml       1 PC          50.00     50.00     6.18     43.82
+10  Chocolate Bar 40 g        1 PC          60.00     60.00     7.42     52.58
+11  Zucchini (per kg)         1.413 KG      56.00     79.13     9.78     69.35
+12  Paneer 200 g              3 PC          75.00    225.00    27.83    197.17
+13  Kabuli Chana loose (per   1.115 KG      96.00    107.04    13.24     93.80
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    2438.57
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Member Savings (Lemon Soda combo pack)             : -Rs    7.00
+   * Member Savings (Cola 750 ml)                       : -Rs    6.00
+   * Coupon (FESTIVE15)                                 : -Rs  200.00
+   * Bill Threshold Savings                             : -Rs  100.00
+ Total Savings & Discounts                          : -Rs    313.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    2125.57
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               329.02         0.00         0.00           0.00
+   5%              1054.30        26.36        26.36          52.72
+   12%              382.96        22.98        22.98          45.96
+   18%              359.29        32.34        32.33          64.67
+ Total GST Collected                               : Rs     163.35
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    2288.92
+==============================================================================
+ LOYALTY SUMMARY:
+   Points Earned   : 22 pts (Status: PENDING - Available after 7 days)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

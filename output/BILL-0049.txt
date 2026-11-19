@@ -1,0 +1,56 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0049                 Till ID  : TILL-01
+ Date/Time  : 2026-10-18 20:57:02       Payment  : CARD
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Orange Nagpur (per kg)    1.981 KG     260.00    515.06    68.78    446.28
+2   Mosquito Repellent machi  1 PC          70.00     70.00     2.61     67.39
+3   Liquid Detergent twin pa  2 PC         240.00    480.00    17.89    462.11
+4   Sweet Lassi 200 ml        3 PC          75.00    225.00     8.38    216.62
+5   Ginger (per kg)           0.913 KG     180.00    164.34    21.94    142.40
+6   Marie Biscuits 250 g      1 PC         150.00    150.00     5.59    144.41
+7   Wafers 75 g               1 PC          25.00     25.00     0.93     24.07
+8   Curd 400 g                2 PC          20.00     40.00     1.49     38.51
+9   Shampoo trial size        2 PC          55.00    110.00     4.10    105.90
+10  Body Lotion value pack    3 PC          85.00    255.00     9.50    245.50
+11  Peanut Chikki trial size  3 PC         199.00    597.00    22.26    574.74
+12  Bathing Soap 100 g        3 PC          60.00    180.00    64.47    115.53
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    2811.40
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Bathing soap buy 2 get 1 (MB-01 - Free: Bathing Soap 100 g) : -Rs   60.00
+   * Fresh Clearance 10% (Orange Nagpur (per kg))       : -Rs   51.51
+   * Fresh Clearance 10% (Ginger (per kg))              : -Rs   16.43
+   * Bill Threshold Savings                             : -Rs  100.00
+ Total Savings & Discounts                          : -Rs    227.94
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    2583.46
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               588.68         0.00         0.00           0.00
+   5%               255.13         6.38         6.38          12.76
+   12%              743.22        44.60        44.59          89.19
+   18%              996.43        89.68        89.68         179.36
+ Total GST Collected                               : Rs     281.31
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    2864.77
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

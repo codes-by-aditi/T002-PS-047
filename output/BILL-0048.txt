@@ -1,0 +1,41 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0048                 Till ID  : TILL-01
+ Date/Time  : 2026-10-18 20:16:20       Payment  : CARD
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Watermelon (per kg)       2.935 KG     220.00    645.70     0.00    645.70
+2   Watermelon (per kg)       3.395 KG     220.00    746.90     0.00    746.90
+3   Watermelon (per kg)       2.690 KG     220.00    591.80   591.80      0.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    1984.40
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Watermelon buy 2 get 1 (per weighed piece) (MB-04 - Free: Watermelon (per kg)) : -Rs  591.80
+ Total Savings & Discounts                          : -Rs    591.80
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    1392.60
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%              1392.60         0.00         0.00           0.00
+ Total GST Collected                               : Rs       0.00
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    1392.60
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

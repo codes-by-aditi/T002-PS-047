@@ -1,0 +1,52 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0044                 Till ID  : TILL-02
+ Date/Time  : 2026-10-18 17:30:44       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Peanut Chikki trial size  3 PC         199.00    597.00    14.12    582.88
+2   Atta Whole Wheat 10 kg    1 PC         205.00    205.00     4.85    200.15
+3   Aluminium Foil 25 m       3 PC         310.00    930.00    21.99    908.01
+4   Shampoo value pack        1 PC          85.00     85.00     2.01     82.99
+5   Broccoli (per kg)         0.237 KG     180.00     42.66     1.01     41.65
+6   Zucchini (per kg)         0.182 KG      56.00     10.19     0.24      9.95
+7   Brinjal (per kg)          1.098 KG     260.00    285.48     6.75    278.73
+8   Hair Oil Coconut trial s  2 PC          55.00    110.00     2.60    107.40
+9   Button Mushroom (per kg)  0.152 KG      56.00      8.51     0.20      8.31
+10  Green Tea Bags 100 bags   1 PC          84.00     84.00     1.99     82.01
+11  Bombay Rava loose (per k  1.835 KG    1020.00   1871.70    44.24   1827.46
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    4229.54
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Bill Threshold Savings                             : -Rs  100.00
+ Total Savings & Discounts                          : -Rs    100.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    4129.54
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               338.64         0.00         0.00           0.00
+   5%              2027.61        50.69        50.69         101.38
+   12%              664.89        39.90        39.89          79.79
+   18%             1098.40        98.86        98.85         197.71
+ Total GST Collected                               : Rs     378.88
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    4508.42
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

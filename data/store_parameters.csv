@@ -1,0 +1,16 @@
+param,value,notes
+STORE_OPEN,08:00:00,till open time
+STORE_CLOSE,22:00:00,store closing time
+EVENING_CLEARANCE_FROM,20:00:00,FRESH weighed after this time
+EVENING_CLEARANCE_PCT,10,percent
+MIN_NET_WEIGHT_KG,0.005,below this a weighed scan is rejected
+THRESHOLD_1_AMOUNT,2000.00,subtotal after coupon >= this
+THRESHOLD_1_DISCOUNT,100.00,Rs
+THRESHOLD_2_AMOUNT,5000.00,subtotal after coupon >= this
+THRESHOLD_2_DISCOUNT,300.00,Rs
+POINT_VALUE,0.25,Rs per point
+REDEEM_MULTIPLE,100,points
+REDEEM_MAX_PCT,20,percent of bill
+EARN_PER_RS,100.00,1 point per this many Rs of post-GST value
+RETURN_WINDOW_DAYS,7,days
+PCT_COUPON_MAX,200.00,Rs

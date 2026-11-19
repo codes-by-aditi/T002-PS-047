@@ -1,0 +1,46 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0046                 Till ID  : TILL-01
+ Date/Time  : 2026-10-18 18:41:51       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Fabric Conditioner combo  1 PC         240.00    240.00     0.00    240.00
+2   Cigarettes King pack of   1 PC          50.00     50.00     0.00     50.00
+3   Candles pack of 6         2 PC          30.00     60.00     0.00     60.00
+4   Marie Biscuits 250 g      3 PC         150.00    450.00   150.00    300.00
+5   Health Drink Malt 500 g   2 PC          90.00    180.00     0.00    180.00
+6   Digestive Biscuits 500 g  3 PC          84.00    252.00    84.00    168.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    1232.00
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Biscuits & cookies: any 3, cheapest free (MB-03 - Free: Marie Biscuits 250 g) : -Rs  150.00
+   * Biscuits & cookies: any 3, cheapest free (MB-03 - Free: Digestive Biscuits 500 g) : -Rs   84.00
+ Total Savings & Discounts                          : -Rs    234.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     998.00
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   12%              648.00        38.88        38.88          77.76
+   18%              350.00        31.50        31.50          63.00
+ Total GST Collected                               : Rs     140.76
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    1138.76
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

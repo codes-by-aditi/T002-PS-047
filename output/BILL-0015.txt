@@ -1,0 +1,59 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0015                 Till ID  : TILL-01
+ Date/Time  : 2026-10-17 16:17:39       Payment  : CASH
+ Member ID  : MEM-0029
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Green Tea Bags 100 bags   2 PC          84.00    168.00     9.56    158.44
+2   Chewing Tobacco 10 g      1 PC         125.00    125.00     7.11    117.89
+3   Namkeen Mixture trial si  1 PC          55.00     55.00     3.13     51.87
+4   Methi Leaves (per kg)     1.800 KG      40.00     72.00     4.10     67.90
+5   Moong Dal loose (per kg)  0.237 KG     110.00     26.07     1.49     24.58
+6   Lemon Soda family pack    2 PC         240.00    480.00    46.18    433.82
+7   Health Drink Malt 500 g   3 PC          90.00    270.00    26.69    243.31
+8   Poha loose (per kg)       0.716 KG     110.00     78.76     4.49     74.27
+9   Plum (per kg)             1.595 KG      56.00     89.32     5.09     84.23
+10  Coconut Water 200 ml      2 PC          75.00    150.00     8.54    141.46
+11  Wheat loose (per kg)      1.545 KG     110.00    169.95     9.67    160.28
+12  Chikoo (per kg)           1.134 KG      80.00     90.72     5.16     85.56
+13  Face Wash twin pack       1 PC          55.00     55.00     3.13     51.87
+14  Coconut Water trial size  2 PC         199.00    398.00    22.66    375.34
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    2227.82
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Member Savings (Lemon Soda family pack)            : -Rs   20.00
+   * Member Savings (Health Drink Malt 500 g)           : -Rs   12.00
+   * Bill Threshold Savings                             : -Rs  100.00
+   * Loyalty Points Burned (100 pts)                    : -Rs   25.00
+ Total Savings & Discounts                          : -Rs    157.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    2070.82
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               237.69         0.00         0.00           0.00
+   5%               259.13         6.48         6.48          12.96
+   12%             1404.24        84.26        84.25         168.51
+   18%              169.76        15.28        15.28          30.56
+ Total GST Collected                               : Rs     212.03
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    2282.85
+==============================================================================
+ LOYALTY SUMMARY:
+   Points Redeemed : 100 pts (Saved Rs 25.00)
+   Points Earned   : 21 pts (Status: PENDING - Available after 7 days)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

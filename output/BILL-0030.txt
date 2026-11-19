@@ -1,0 +1,56 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0030                 Till ID  : TILL-02
+ Date/Time  : 2026-10-18 10:06:54       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Peanut Chikki value pack  3 PC          85.00    255.00    12.04    242.96
+2   Talcum Powder 100 g       1 PC          25.00     25.00     1.18     23.82
+3   Almonds loose (per kg)    0.238 KG     180.00     42.84     2.02     40.82
+4   Grapes Green (per kg)     2.171 KG      80.00    173.68     8.20    165.48
+5   Chilli Powder 100 g       1 PC         125.00    125.00     5.90    119.10
+6   Toothbrush single         1 PC          45.00     45.00     2.12     42.88
+7   Shampoo 340 ml            1 PC         210.00    210.00     9.91    200.09
+8   Detergent Powder 4 kg     2 PC         420.00    840.00    39.66    800.34
+9   Toned Milk 500 ml         2 PC          50.00    100.00     4.72     95.28
+10  Murukku 200 g             1 PC          45.00     45.00     2.12     42.88
+11  Dishwash Bar 200 g        2 PC          20.00     40.00     1.89     38.11
+12  Filter Coffee 500 g       2 PC          56.00    112.00     5.29    106.71
+13  Potato Chips 52 g         1 PC          45.00     45.00     2.12     42.88
+14  Digestive Biscuits 250 g  3 PC          30.00     90.00    32.83     57.17
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    2148.52
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Biscuits & cookies: any 3, cheapest free (MB-03 - Free: Digestive Biscuits 250 g) : -Rs   30.00
+   * Bill Threshold Savings                             : -Rs  100.00
+ Total Savings & Discounts                          : -Rs    130.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    2018.52
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               165.48         0.00         0.00           0.00
+   5%               361.91         9.05         9.05          18.10
+   12%              385.89        23.16        23.15          46.31
+   18%             1105.24        99.47        99.47         198.94
+ Total GST Collected                               : Rs     263.35
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    2281.87
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

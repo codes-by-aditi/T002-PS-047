@@ -1,0 +1,44 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0014                 Till ID  : TILL-03
+ Date/Time  : 2026-10-17 15:31:30       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Shampoo 180 ml            1 PC         245.00    245.00     0.00    245.00
+2   Shampoo 340 ml            1 PC         210.00    210.00     0.00    210.00
+3   Shampoo 650 ml            1 PC         180.00    180.00   180.00      0.00
+4   Conditioner 180 ml        1 PC         150.00    150.00     0.00    150.00
+5   Chilli Powder 200 g       1 PC         350.00    350.00     0.00    350.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    1135.00
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Hair care: any 3, cheapest free (MB-02 - Free: Shampoo 650 ml) : -Rs  180.00
+ Total Savings & Discounts                          : -Rs    180.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     955.00
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   5%               350.00         8.75         8.75          17.50
+   18%              605.00        54.45        54.45         108.90
+ Total GST Collected                               : Rs     126.40
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    1081.40
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

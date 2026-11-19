@@ -1,0 +1,37 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0006                 Till ID  : TILL-02
+ Date/Time  : 2026-10-17 11:05:50       Payment  : CARD
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Potato (per kg)           1.237 KG     220.00    272.14     0.00    272.14
+2   Cow Ghee 1 l              1 PC         350.00    350.00     0.00    350.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     622.14
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     622.14
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               272.14         0.00         0.00           0.00
+   5%               350.00         8.75         8.75          17.50
+ Total GST Collected                               : Rs      17.50
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     639.64
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

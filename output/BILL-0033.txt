@@ -1,0 +1,39 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0033                 Till ID  : TILL-02
+ Date/Time  : 2026-10-18 10:27:54       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Milk Powder 500 g         1 PC          40.00     40.00     0.00     40.00
+2   Chikoo (per kg)           1.158 KG      80.00     92.64     0.00     92.64
+3   Health Drink Malt combo   3 PC         199.00    597.00     0.00    597.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     729.64
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     729.64
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%                92.64         0.00         0.00           0.00
+   5%                40.00         1.00         1.00           2.00
+   12%              597.00        35.82        35.82          71.64
+ Total GST Collected                               : Rs      73.64
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     803.28
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

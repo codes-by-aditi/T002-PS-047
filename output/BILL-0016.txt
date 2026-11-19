@@ -1,0 +1,50 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0016                 Till ID  : TILL-02
+ Date/Time  : 2026-10-17 17:04:33       Payment  : UPI
+ Member ID  : MEM-0029
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Cheese Spread 180 g       1 PC          25.00     25.00     1.00     24.00
+2   Digestive Biscuits value  2 PC          85.00    170.00     0.00    170.00
+3   Peanut Chikki trial size  3 PC         199.00    597.00     0.00    597.00
+4   Orange Nagpur (per kg)    1.925 KG     260.00    500.50     0.00    500.50
+5   Atta Whole Wheat 5 kg     1 PC         125.00    125.00     0.00    125.00
+6   Instant Coffee 50 g       1 PC          30.00     30.00     1.00     29.00
+7   Candles pack of 6         1 PC          30.00     30.00     2.00     28.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    1477.50
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Member Savings (Cheese Spread 180 g)               : -Rs    1.00
+   * Member Savings (Instant Coffee 50 g)               : -Rs    1.00
+   * Member Savings (Candles pack of 6)                 : -Rs    2.00
+ Total Savings & Discounts                          : -Rs      4.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    1473.50
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               500.50         0.00         0.00           0.00
+   5%               149.00         3.73         3.72           7.45
+   12%              796.00        47.76        47.76          95.52
+   18%               28.00         2.52         2.52           5.04
+ Total GST Collected                               : Rs     108.01
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    1581.51
+==============================================================================
+ LOYALTY SUMMARY:
+   Points Earned   : 15 pts (Status: PENDING - Available after 7 days)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

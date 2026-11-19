@@ -1,0 +1,43 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0041                 Till ID  : TILL-01
+ Date/Time  : 2026-10-18 15:09:43       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Methi Leaves (per kg)     0.737 KG      40.00     29.48     0.00     29.48
+2   Cow Ghee 500 ml           2 PC         125.00    250.00     0.00    250.00
+3   Digestive Biscuits 500 g  1 PC          84.00     84.00     0.00     84.00
+4   Hand Wash combo pack      2 PC          55.00    110.00     0.00    110.00
+5   Button Mushroom (per kg)  1.306 KG      56.00     73.14     0.00     73.14
+6   Floor Cleaner 1 l         2 PC         210.00    420.00     0.00    420.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     966.62
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     966.62
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               102.62         0.00         0.00           0.00
+   5%               250.00         6.25         6.25          12.50
+   12%               84.00         5.04         5.04          10.08
+   18%              530.00        47.70        47.70          95.40
+ Total GST Collected                               : Rs     117.98
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    1084.60
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

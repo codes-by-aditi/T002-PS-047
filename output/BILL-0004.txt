@@ -1,0 +1,44 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0004                 Till ID  : TILL-02
+ Date/Time  : 2026-10-17 10:09:29       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Spring Onion (per kg)     2.250 KG      80.00    180.00     0.00    180.00
+2   Digestive Biscuits 500 g  1 PC          84.00     84.00     0.00     84.00
+3   French Beans (per kg)     1.648 KG      80.00    131.84     0.00    131.84
+4   Maida 1 kg                2 PC          50.00    100.00     0.00    100.00
+5   Sweet Corn (per kg)       1.241 KG      40.00     49.64     0.00     49.64
+6   Toothpaste 300 g          2 PC         210.00    420.00     0.00    420.00
+7   Curd 1 kg                 1 PC          56.00     56.00     0.00     56.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    1021.48
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    1021.48
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               361.48         0.00         0.00           0.00
+   5%               156.00         3.90         3.90           7.80
+   12%               84.00         5.04         5.04          10.08
+   18%              420.00        37.80        37.80          75.60
+ Total GST Collected                               : Rs      93.48
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    1114.96
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

@@ -1,0 +1,54 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0029                 Till ID  : TILL-03
+ Date/Time  : 2026-10-18 09:24:28       Payment  : UPI
+ Member ID  : MEM-0013
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Deodorant 150 ml          1 PC          35.00     35.00     0.97     34.03
+2   Sanitary Pads pack of 30  2 PC         210.00    420.00    11.66    408.34
+3   Coconut Water trial size  1 PC         199.00    199.00     5.52    193.48
+4   Glucose Biscuits 200 g    2 PC          90.00    180.00     5.00    175.00
+5   Sambar Powder 100 g       2 PC          35.00     70.00     7.78     62.22
+6   Garam Masala 100 g        1 PC         170.00    170.00     4.72    165.28
+7   Lip Balm trial size       1 PC         240.00    240.00     6.66    233.34
+8   Masoor Dal loose (per kg  2.344 KG     880.00   2062.72    57.23   2005.49
+9   Capsicum Green (per kg)   1.884 KG      36.00     67.82     1.88     65.94
+10  Toothbrush single         1 PC          45.00     45.00     1.25     43.75
+11  Bathing Soap 100 g        3 PC          60.00    180.00    63.33    116.67
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    3669.54
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Bathing soap buy 2 get 1 (MB-01 - Free: Bathing Soap 100 g) : -Rs   60.00
+   * Member Savings (Sambar Powder 100 g)               : -Rs    6.00
+   * Bill Threshold Savings                             : -Rs  100.00
+ Total Savings & Discounts                          : -Rs    166.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    3503.54
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%                65.94         0.00         0.00           0.00
+   5%              2232.99        55.83        55.82         111.65
+   12%              368.48        22.11        22.11          44.22
+   18%              836.13        75.25        75.25         150.50
+ Total GST Collected                               : Rs     306.37
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    3809.91
+==============================================================================
+ LOYALTY SUMMARY:
+   Points Earned   : 38 pts (Status: PENDING - Available after 7 days)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

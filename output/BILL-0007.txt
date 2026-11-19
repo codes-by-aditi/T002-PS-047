@@ -1,0 +1,40 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0007                 Till ID  : TILL-01
+ Date/Time  : 2026-10-17 11:55:07       Payment  : CASH
+ Member ID  : MEM-0009
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Sanitary Pads mini        1 PC         120.00    120.00     0.00    120.00
+2   Carrot (per kg)           2.139 KG      40.00     85.56     0.00     85.56
+3   Plum (per kg)             1.898 KG      56.00    106.29     0.00    106.29
+4   Jackfruit (per kg)        1.984 KG     140.00    277.76     0.00    277.76
+5   Ridge Gourd (per kg)      0.186 KG      60.00     11.16     0.00     11.16
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     600.77
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     600.77
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               480.77         0.00         0.00           0.00
+   18%              120.00        10.80        10.80          21.60
+ Total GST Collected                               : Rs      21.60
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     622.37
+==============================================================================
+ LOYALTY SUMMARY:
+   Points Earned   : 6 pts (Status: PENDING - Available after 7 days)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

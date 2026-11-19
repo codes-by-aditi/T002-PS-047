@@ -1,0 +1,47 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0003                 Till ID  : TILL-02
+ Date/Time  : 2026-10-17 09:44:58       Payment  : CASH
+ Member ID  : MEM-0008
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Toothbrush single         1 PC          45.00     45.00     1.66     43.34
+2   Toned Milk 1 l            2 PC         140.00    280.00    10.36    269.64
+3   Shampoo trial size        1 PC          55.00     55.00     2.03     52.97
+4   Mixed Fruit Juice mini    1 PC          55.00     55.00     2.03     52.97
+5   Onion (per kg)            1.341 KG     180.00    241.38     8.92    232.46
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     676.38
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Loyalty Points Burned (100 pts)                    : -Rs   25.00
+ Total Savings & Discounts                          : -Rs     25.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     651.38
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               232.46         0.00         0.00           0.00
+   5%               269.64         6.74         6.74          13.48
+   12%               52.97         3.18         3.18           6.36
+   18%               96.31         8.67         8.67          17.34
+ Total GST Collected                               : Rs      37.18
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     688.56
+==============================================================================
+ LOYALTY SUMMARY:
+   Points Redeemed : 100 pts (Saved Rs 25.00)
+   Points Earned   : 6 pts (Status: PENDING - Available after 7 days)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

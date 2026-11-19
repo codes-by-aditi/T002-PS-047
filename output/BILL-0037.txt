@@ -1,0 +1,40 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0037                 Till ID  : TILL-02
+ Date/Time  : 2026-10-18 13:09:49       Payment  : CARD
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Oats Cookies 250 g        1 PC          35.00     35.00     0.00     35.00
+2   Coconut Water trial size  1 PC         199.00    199.00     0.00    199.00
+3   Liquid Detergent 2 l      3 PC          84.00    252.00     0.00    252.00
+4   Murukku 200 g             1 PC          45.00     45.00     0.00     45.00
+5   Toilet Cleaner value pac  1 PC          85.00     85.00     0.00     85.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     616.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     616.00
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   12%              279.00        16.74        16.74          33.48
+   18%              337.00        30.33        30.33          60.66
+ Total GST Collected                               : Rs      94.14
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     710.14
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

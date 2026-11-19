@@ -1,0 +1,11 @@
+return_id,original_bill_id,sku,qty,status,refund_amount,multibuy_clawback,reason
+RET-001,BILL-0002,SKU-0081,1,REJECTED,0.00,0.00,Rejected: Item '8906465000819' was not part of bill 'BILL-0002'
+RET-002,BILL-0001,SKU-0048,1,REJECTED,0.00,0.00,Rejected: Weighed item 'Custard Apple (per kg)' is strictly non-returnable (BR-12)
+RET-003,BILL-0001,SKU-0212,1,ACCEPTED,463.78,0.00,Return accepted and processed
+RET-004,BILL-0003,SKU-0082,1,ACCEPTED,141.56,0.00,Return accepted and processed
+RET-005,BILL-0017,SKU-0141,1,ACCEPTED,0.00,0.00,Free item return - refund Rs 0.00
+RET-006,BILL-0039,SKU-0186,2,ACCEPTED,39.12,60.00,Return accepted and processed
+RET-007,BILL-0004,SKU-0125,1,ACCEPTED,52.50,0.00,Return accepted and processed
+RET-008,BILL-0035,SKU-0258,1,ACCEPTED,201.66,0.00,Return accepted and processed
+RET-009,BILL-0020,SKU-0158,1,ACCEPTED,22.40,0.00,Return accepted and processed
+RET-010,BILL-0035,SKU-0289,1,REJECTED,0.00,0.00,Rejected: Outside 7-day return window (bill date: 2026-10-18)

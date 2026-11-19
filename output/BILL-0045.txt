@@ -1,0 +1,41 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0045                 Till ID  : TILL-01
+ Date/Time  : 2026-10-18 18:22:17       Payment  : UPI
+ Member ID  : MEM-0030
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Muskmelon (per kg)        1.347 KG     180.00    242.46     0.00    242.46
+2   Peanut Chikki trial size  3 PC         199.00    597.00     0.00    597.00
+3   Papaya (per kg)           1.592 KG      80.00    127.36     0.00    127.36
+4   Kiwi (per kg)             0.882 KG      72.00     63.50     0.00     63.50
+5   Lemon (per kg)            1.726 KG      24.00     41.42     0.00     41.42
+6   Red Cabbage (per kg)      1.221 KG     140.00    170.94     0.00    170.94
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    1242.68
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    1242.68
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               645.68         0.00         0.00           0.00
+   12%              597.00        35.82        35.82          71.64
+ Total GST Collected                               : Rs      71.64
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    1314.32
+==============================================================================
+ LOYALTY SUMMARY:
+   Points Earned   : 13 pts (Status: PENDING - Available after 7 days)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

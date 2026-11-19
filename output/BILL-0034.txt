@@ -1,0 +1,53 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0034                 Till ID  : TILL-02
+ Date/Time  : 2026-10-18 11:28:01       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Glucose Biscuits 800 g    1 PC         250.00    250.00    77.32    172.68
+2   Grapes Green (per kg)     1.676 KG      80.00    134.08    41.47     92.61
+3   Matchbox pack of 10       2 PC          20.00     40.00    12.37     27.63
+4   Badam Drink 180 ml        1 PC         125.00    125.00    38.66     86.34
+5   Shaving Cream 70 g        1 PC          35.00     35.00    10.82     24.18
+6   Ragi loose (per kg)       0.428 KG     156.00     66.77    20.65     46.12
+7   Red Cabbage (per kg)      0.356 KG     140.00     49.84    15.41     34.43
+8   Glass Cleaner 500 ml      1 PC          60.00     60.00    18.56     41.44
+9   Agarbatti 100 sticks      3 PC          90.00    270.00    83.50    186.50
+10  Potato Chips trial size   3 PC         120.00    360.00   111.34    248.66
+11  Bathing Soap 4x100 g      1 PC         170.00    170.00    52.58    117.42
+12  Curd 1 kg                 1 PC          56.00     56.00    17.32     38.68
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    1616.69
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Coupon (FLAT500)                                   : -Rs  500.00
+ Total Savings & Discounts                          : -Rs    500.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    1116.69
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               127.04         0.00         0.00           0.00
+   5%                84.80         2.12         2.12           4.24
+   12%              507.68        30.46        30.46          60.92
+   18%              397.17        35.75        35.74          71.49
+ Total GST Collected                               : Rs     136.65
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    1253.34
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

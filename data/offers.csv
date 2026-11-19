@@ -1,0 +1,5 @@
+offer_group,description,buy_qty,free_qty,max_free_per_bill,valid_from,valid_to
+MB-01,Bathing soap buy 2 get 1,2,1,3,2026-10-01,2026-10-31
+MB-02,"Hair care: any 3, cheapest free",2,1,3,2026-10-01,2026-10-31
+MB-03,"Biscuits & cookies: any 3, cheapest free",2,1,3,2026-10-01,2026-10-31
+MB-04,Watermelon buy 2 get 1 (per weighed piece),2,1,3,2026-10-01,2026-10-31

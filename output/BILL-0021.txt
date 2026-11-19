@@ -1,0 +1,43 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0021                 Till ID  : TILL-02
+ Date/Time  : 2026-10-17 20:00:40       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Maida 1 kg                1 PC          50.00     50.00     0.00     50.00
+2   Cauliflower (per kg)      1.465 KG     140.00    205.10    20.51    184.59
+3   Lady Finger (per kg)      0.740 KG     260.00    192.40    19.24    173.16
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     447.50
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Fresh Clearance 10% (Cauliflower (per kg))         : -Rs   20.51
+   * Fresh Clearance 10% (Lady Finger (per kg))         : -Rs   19.24
+ Total Savings & Discounts                          : -Rs     39.75
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     407.75
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               357.75         0.00         0.00           0.00
+   5%                50.00         1.25         1.25           2.50
+ Total GST Collected                               : Rs       2.50
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     410.25
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

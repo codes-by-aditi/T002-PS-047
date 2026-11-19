@@ -1,0 +1,38 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0002                 Till ID  : TILL-01
+ Date/Time  : 2026-10-17 09:13:04       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Tomato (per kg)           0.005 KG      40.00      0.20     0.00      0.20
+2   Butter 100 g              1 PC          35.00     35.00     0.00     35.00
+3   Flavoured Milk 500 ml     2 PC          70.00    140.00     0.00    140.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     175.20
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     175.20
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%                 0.20         0.00         0.00           0.00
+   5%               175.00         4.38         4.37           8.75
+ Total GST Collected                               : Rs       8.75
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     183.95
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

@@ -1,0 +1,45 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0038                 Till ID  : TILL-01
+ Date/Time  : 2026-10-18 13:13:15       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Strawberry (per kg)       2.081 KG      40.00     83.24     0.00     83.24
+2   Pineapple (per kg)        1.712 KG      80.00    136.96     0.00    136.96
+3   Jackfruit (per kg)        0.296 KG     140.00     41.44     0.00     41.44
+4   Orange Juice 1 l          3 PC          50.00    150.00     0.00    150.00
+5   Pear (per kg)             1.515 KG     180.00    272.70     0.00    272.70
+6   Bitter Gourd (per kg)     1.618 KG     220.00    355.96     0.00    355.96
+7   Body Lotion mini          1 PC         120.00    120.00     0.00    120.00
+8   Flavoured Milk 500 ml     1 PC          70.00     70.00     0.00     70.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    1230.30
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    1230.30
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               890.30         0.00         0.00           0.00
+   5%                70.00         1.75         1.75           3.50
+   12%              150.00         9.00         9.00          18.00
+   18%              120.00        10.80        10.80          21.60
+ Total GST Collected                               : Rs      43.10
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    1273.40
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

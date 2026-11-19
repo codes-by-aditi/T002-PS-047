@@ -1,0 +1,36 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0005                 Till ID  : TILL-03
+ Date/Time  : 2026-10-17 10:42:29       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Cheese Slices 200 g       1 PC          45.00     45.00     0.00     45.00
+2   Greek Yogurt 400 g        1 PC          70.00     70.00     0.00     70.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs     115.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     115.00
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   5%               115.00         2.88         2.87           5.75
+ Total GST Collected                               : Rs       5.75
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     120.75
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

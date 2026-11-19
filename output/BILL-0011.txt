@@ -1,0 +1,54 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0011                 Till ID  : TILL-02
+ Date/Time  : 2026-10-17 14:05:48       Payment  : UPI
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Potato (per kg)           1.356 KG     220.00    298.32     8.12    290.20
+2   Brinjal (per kg)          2.166 KG     260.00    563.16    15.32    547.84
+3   Potato Chips 90 g         1 PC         125.00    125.00     3.40    121.60
+4   Murukku twin pack         2 PC          55.00    110.00     2.99    107.01
+5   Pear (per kg)             1.840 KG     180.00    331.20     9.01    322.19
+6   Ridge Gourd (per kg)      1.212 KG      60.00     72.72     1.98     70.74
+7   Potato Chips 150 g        3 PC         205.00    615.00    16.75    598.25
+8   Rusk 200 g                1 PC          60.00     60.00     1.63     58.37
+9   Garbage Bags combo pack   3 PC         199.00    597.00    16.24    580.76
+10  Toothpaste 300 g          2 PC         210.00    420.00    11.43    408.57
+11  Cigarettes King pack of   1 PC         140.00    140.00     3.81    136.19
+12  Wafers combo pack         1 PC         199.00    199.00     5.41    193.59
+13  Spinach (per kg)          0.925 KG      48.00     44.40     1.21     43.19
+14  Iceberg Lettuce (per kg)  1.656 KG      60.00     99.36     2.70     96.66
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    3675.16
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Bill Threshold Savings                             : -Rs  100.00
+ Total Savings & Discounts                          : -Rs    100.00
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    3575.16
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%              1370.82         0.00         0.00           0.00
+   12%             1078.82        64.73        64.73         129.46
+   18%             1125.52       101.30       101.29         202.59
+ Total GST Collected                               : Rs     332.05
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    3907.21
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

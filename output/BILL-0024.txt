@@ -1,0 +1,48 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0024                 Till ID  : TILL-02
+ Date/Time  : 2026-10-17 21:30:40       Payment  : UPI
+ Member ID  : MEM-0035
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Radish (per kg)           0.311 KG      36.00     11.20     1.12     10.08
+2   Paneer 200 g              1 PC          75.00     75.00     0.00     75.00
+3   Onion (per kg)            0.785 KG     180.00    141.30    14.13    127.17
+4   Sanitary Pads pack of 30  2 PC         210.00    420.00     0.00    420.00
+5   Liquid Detergent 1 l      2 PC          30.00     60.00     0.00     60.00
+6   Namkeen Mixture 400 g     3 PC         140.00    420.00     0.00    420.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    1127.50
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Fresh Clearance 10% (Radish (per kg))              : -Rs    1.12
+   * Fresh Clearance 10% (Onion (per kg))               : -Rs   14.13
+ Total Savings & Discounts                          : -Rs     15.25
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs    1112.25
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   0%               137.25         0.00         0.00           0.00
+   5%                75.00         1.88         1.87           3.75
+   12%              420.00        25.20        25.20          50.40
+   18%              480.00        43.20        43.20          86.40
+ Total GST Collected                               : Rs     140.55
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs    1252.80
+==============================================================================
+ LOYALTY SUMMARY:
+   Points Earned   : 12 pts (Status: PENDING - Available after 7 days)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================

@@ -1,0 +1,44 @@
+==============================================================================
+              SUPERMARKET POS - RETAIL TAX INVOICE
+          Capstone Project PS-047 | Team IDT002
+              Aditi Anshu & Aditi Chaudhary
+==============================================================================
+ Bill ID    : BILL-0010                 Till ID  : TILL-03
+ Date/Time  : 2026-10-17 13:10:22       Payment  : CARD
+ Member ID  : Guest (Non-Member)
+------------------------------------------------------------------------------
+#   Item Description          Qty/Wt         Rate     Gross     Disc   Taxable
+------------------------------------------------------------------------------
+1   Talcum Powder 100 g       2 PC          25.00     50.00     7.50     42.50
+2   Talcum Powder 100 g       1 PC          25.00     25.00     3.75     21.25
+3   Glucose Biscuits 200 g    1 PC          90.00     90.00    13.50     76.50
+4   Cream Biscuits 300 g      3 PC         310.00    930.00   403.00    527.00
+------------------------------------------------------------------------------
+ Subtotal (Gross Sales)                            : Rs    1095.00
+..............................................................................
+ APPLIED PROMOTIONS & DISCOUNTS:
+   * Biscuits & cookies: any 3, cheapest free (MB-03 - Free: Cream Biscuits 300 g) : -Rs  310.00
+   * Coupon (FESTIVE15)                                 : -Rs  117.75
+ Total Savings & Discounts                          : -Rs    427.75
+------------------------------------------------------------------------------
+ Net Taxable Value                                 : Rs     667.25
+..............................................................................
+ GST BREAKDOWN BY RATE SLAB (Rounded per Slab):
+   Slab        Taxable Val         CGST         SGST      Total Tax
+   -------- -------------- ------------ ------------ --------------
+   12%              603.50        36.21        36.21          72.42
+   18%               63.75         5.74         5.74          11.48
+ Total GST Collected                               : Rs      83.90
+==============================================================================
+ GRAND TOTAL (NET PAYABLE)                         : Rs     751.15
+==============================================================================
+ LOYALTY SUMMARY:
+   (No loyalty account linked to this transaction)
+------------------------------------------------------------------------------
+ RETURN POLICY:
+ * Valid for 7 days up to store closing against this original bill.
+ * Weighed items (KG) are strictly non-returnable (BR-12).
+ * Multi-buy deals subject to clawback reversal upon partial return (BR-13).
+==============================================================================
+                   THANK YOU FOR SHOPPING WITH US!
+==============================================================================
